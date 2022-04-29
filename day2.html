@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form:radiobutton and checkbox,dropdown
+    tables:colspan,rowspan -->
+
+    <div>
+        <h1>Form</h1>
+        <p>radio button : radio button are used for selection only one option . In radio button name should be same </p>
+        <p>checkbox: which is used to select multiple option</p>
+
+        <form action="./msg.html">
+            <div class="radio">
+                <input type="radio" name="name" id="html" value="Html">
+                <label for="html">Html</label>
+
+                <input type="radio" name="name" id="css" value="Css">
+                <label for="css">Html</label>
+
+                <input type="radio" name="name" id="react" value="'React">
+                <label for="react">React</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="name" id="html1" value="Html">
+                <label for="html">Html</label>
+
+                <input type="checkbox" name="name" id="css1" value="Css">
+                <label for="css">Html</label>
+
+                <input type="checkbox" name="name" id="react1" value="'React">
+                <label for="react">React</label>
+            </div>
+            <div class="dropdown">
+                <label for=drop"">Select the below course</label>
+                <select name="dropdown" id="drop">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="react">React</option>
+                </select>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <h1>Table</h1>
+        <p>Table:whenever we wont to save any information for our client/user in tabbular format that time we use table</p>
+        <ul>
+            <li>tr=table row</li>
+            <li>th=table heading</li>
+            <li>td= table data</td>
+        </ul>
+
+        <table border="2px" width="500px" height="40px">
+            <thead>
+                <td align="center">Id </td>
+                <td align="center">Name</td>
+                <td align="center">Age</td>
+                <td align="center">course</td>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td >1</td>
+                    <td >Rahul</td>
+                    <td>22</td>
+                    <td>python Full stack</td>
+                </tr>
+                <tr>
+                    <td >2</td>
+                    <td >Riya</td>
+                    <td>24</td>
+                    <td>Mern Full stack </td>
+                </tr>
+                <tr>
+                    <td >1</td>
+                    <td >pooja</td>
+                    <td>23</td>
+                    <td>MeanFull stack</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>table 2</p>
+        <table border="2px" width="500px" height="40px">
+            <thead>
+                
+                <td align="center" colspan="4">Name</td>
+                
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td >1</td>
+                    <td colspan="3">Rahul</td>
+                   
+                </tr>
+                <tr>
+                    <td >2</td>
+                    <td rowspan="2">Riya</td>
+                    <td>24</td>
+                    <td>Mern Full stack </td>
+                </tr>
+                <tr>
+                    <td >3</td>
+                    
+                    <td>23</td>
+                    <td>MeanFull stack</td>
+                </tr>
+                <tr>
+                    <td >4s</td>
+                    <td>aakash</td>
+                    <td>23</td>
+                    <td>MeanFull stack</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>table3</p>
+        <table align="center" border="3px" width="500px" height="200px" font-weight="bolder">
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Row1 Cell1</td>
+                <td>Row1 Cell2</td>
+                <td>Row1 Cell3</td>
+            </tr>
+            <tr>
+                
+                <td>Row2 Cell2</td>
+                <td>Row2 Cell3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Row3 Cell1</td>
+                
+            </tr>
+            <tr>
+                <td>Row4 Cell1</td>
+                <td>Row4 Cell2</td>
+                <td>Row4 Cell3</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
