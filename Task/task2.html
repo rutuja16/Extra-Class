@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Task 2</title>
+</head>
+<body>
+    <div align="center">
+    <h1>Google Survey Form</h1>
+    <form action="./msg.html">
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br><br>
+
+        <label for="email">Email ID : </label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Mail ID" required><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"  placeholder="Enter Your Password" required><br><br>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Age" required><br><br>
+
+        <label for="role">Which option best describe your current role?</label><br><br>
+        <select name="role" id="role"  required>
+            <option value="" disabled selected>Select Current Role</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="recommend">Would you recommended freeCodeCamp to a friend?</label><br><br>
+        <input type="radio" name="recommend" id="D" value="Definitely">Definitely<br>
+        <input type="radio" name="recommend" id="M" value="Maybe">Maybe<br>
+        <input type="radio" name="recommend" id="N" value="Not Sure">NotSure<br><br>
+        
+        <label for="improve">What would you like to see improve</label><br><br>
+        <input type="checkbox" name="i1" id="i1" value="Front-End Projects">Front-End Projects<br>
+        <input type="checkbox" name="i2" id="i2" value="Back-End Projects">Back-End Projects<br>
+        <input type="checkbox" name="i3" id="i3" value="Data Visualization">Data Visualization<br>
+        <input type="checkbox" name="i4" id="i4" value="Challenges">Challenges<br>
+        <input type="checkbox" name="i5" id="i5" value="Open Sourse Community">Open Sourse Community<br>
+        <input type="checkbox" name="i6" id="i6" value="Gitter help rooms">Gitter help rooms<br>
+        <input type="checkbox" name="i7" id="i7" value="videos">videos<br>
+        <input type="checkbox" name="i8" id="i8" value="Wiki">Wiki<br>
+        <input type="checkbox" name="i9" id="i9" value="Forums">Forums<br>
+        <input type="checkbox" name="i10" id="i10" value="Additional Courses">Additional Courses<br>
+
+        <label for="comment">Any comments or suggestions</label><br>
+        <textarea name="comment" id="comment" cols="80" rows="7" placeholder="Enter your comment here..."></textarea><br><br>
+
+        <button>Submit</button>
+    </form>
+</div>  
+</body>
+</html>
