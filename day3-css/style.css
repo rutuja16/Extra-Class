@@ -1,0 +1,53 @@
+/*access class name for styling */
+.external{
+    background-color: aqua;
+    color: black;
+}
+
+/* access id name for styling */
+#external{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.border{
+    padding: 2%;
+    border:2px solid red;
+    border-radius: 10px;
+}
+
+.box1{
+    /* margin:top right bottom left */
+    margin:10px 10px 10px 100px; 
+    /* padding:top right bottom left */
+    padding: 4% 1% 1% 10%;
+    width:50%;
+    height:10vh;
+    background-color: yellow;
+    border-radius: 10px;
+
+}
+
+.b{
+    padding: 2%;
+    margin:1%;
+}
+.b1{
+    border:2px solid black;
+}
+.b2{
+    border:2px dotted red;
+}
+.b3{
+    border:2px groove green;
+}
+.b4{
+    border:2px dashed orange;
+}
+
+.circle{
+    height: 100px;
+    width:100px;
+    border:2px solid black;
+    border-radius: 50%;
+}
