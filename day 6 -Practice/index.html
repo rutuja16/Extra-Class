@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /*Internal css*/
+        .internal{
+            background-color: gold;
+            color: black;
+            padding: 1%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        "Revise all the concepts : 
+
+Q 1 : Create unordered list and ordered list
+Q 2 : Create user form accepting name age contact address 
+Q 3 : Create radio button in selecting Male, Female and create checkbox for selecting options as React HTML CSS JS Node
+Q 4 : Explain different types of CSS
+Q 5 : Create an example to explain the difference between margin and padding
+Q 6 : By using flex , arranges 10 boxes. three boxes should be in a row and page should be scrollable
+Q 7 : Create the image or structure given in the image using grid."
+     -->
+     <div>
+         <h1>Q 1 : Create unordered list and ordered list</h1>
+         <div class="flex-box">
+            <div class="flex1">
+                <h2>Ordered List</h2>
+                <ol type="1">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ol>
+                <hr>
+                <ol type="A">
+                    <li>React</li>
+                    <li>Node JS</li>
+                </ol>
+                <hr>
+                <p>Server List</p>
+                <ol type="I">
+                    <li>SQL Server</li>
+                    <li>Xampp server</li>
+                    <li>MongoDB</li>
+                </ol>
+            </div>
+            <div class="flex2">
+                <h2>Unordered List</h2>
+                <ul type="circle">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <hr>
+                <ul type="disc">
+                    <li>React</li>
+                    <li>Node JS</li>
+                </ul>
+                <hr>
+                <p>Server List</p>
+                <ul type="square">
+                    <li>SQL Server</li>
+                    <li>Xampp server</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+         </div>
+     </div>
+     <hr>
+     <div class="form-box">
+         <h1>Q 2 : Create user form accepting name age contact address </h1>
+         <form class="form1">
+             <label for="name">Name</label>
+             <input type="text" class="name" value="" placeholder="Name" required><br>
+
+             <label for="age">Age</label>
+             <input type="number" class="age" value="" placeholder="Enter Age" required><br>
+
+             <label for="contact">Contact</label>
+             <input type="number" class="contact" maxlength="10" value="" placeholder="Enter Mobile No" required><br>
+
+             <label for="address">Address</label>
+             <input type="text" class="address" value="" placeholder="Enter Address" required><br>
+            
+             <button class="btn-submit">Submit</button>
+         </form>
+     </div>
+     <hr>
+     <div>
+         <h2>Q 3 : Create radio button in selecting Male, Female and create checkbox for selecting options as React HTML CSS JS Node</h2>
+         <form class="form2">
+             <label for="gender">Select Genter</label><br><br>
+             <input type="radio" name="gender" value="Female">
+             <label for="felmale">Female</label>
+             <input type="radio" name="gender" value="Male">
+             <label for="male">Male</label>
+             <input type="radio" name="gender" value="other">
+             <label for="other">Other</label>
+
+             <br><br>
+
+             <label for="language">Select Langage</label>
+             <select name="language" id="language">
+                 <option value="HTML">HTML</option>
+                 <option value="CSS">CSS</option>
+                 <option value="JS">JS</option>
+                 <option value="React">React</option>
+                 <option value="Node">Node</option>
+             </select><br><br>
+
+             <button class="btn-submit">Submit</button>
+
+         </form>
+     </div>
+     <hr>
+     <div>
+         <h1>Q 4 : Explain different types of CSS</h1>
+         <p>there are three ways to include our css</p>
+         <dl>
+             <dt>1.Inline</dt>
+             <dd>Inline css is having more powerful than the both internal and external</dd>
+             
+             <dt>2.Internal</dt>
+             <dd>internal is having more priority than external</dd>
+
+             <dt>3.external</dt>
+             <dd>external ever we are using external style sheet we would link with the link tag</dd>
+         </dl>
+         
+         <br>
+         <ol>
+             <li>Inline css-add style attribute in tag only</li>
+
+             <h1 style="color:white;background-color:green">Inline css</h1>
+             <br>
+             <li>Internal Css-include in head tag using style tag</li>
+             <h2 class="internal">Internal css</h2>
+             <br>
+             <li>External Css-link external css file using link tag in head</li>
+             <p>multiple class is applied but only one id is applied for css</p>
+             <h3 class="external border" id="external">External Css</h3>
+         </ol>
+     </div>
+     <hr>
+     <div>
+        <h1>Q 5 : Create an example to explain the difference between margin and padding</h1>
+
+        <h4>Margin</h4>
+        <p>margin between the browsers screen and the element border</p>
+        <ul>
+            <li>Margin Top</li>
+            <li>Margin Right</li>
+            <li>Margin Bottom</li>
+            <li>Margin Left</li>
+        </ul>
+        <h4>Padding</h4>
+        <p>The space between the  Element border  and the Content</p>
+        <ul>
+            <li>Padding Top</li>
+            <li>Padding Right</li>
+            <li>padding Bottom</li>
+            <li>padding Left</li>
+        </ul>
+        <p>short hand property <br>margin:10px 10px <br> padding:10px 3px 4px</p>
+        <div class="box1">Margin and padding example</div>
+     </div>
+     <hr>
+     <div>
+         <h1>Q 6 : By using flex , arranges 10 boxes. three boxes should be in a row and page should be scrollable</h1>
+        <div class="flex-container">
+            <div class="flex">flex 1</div>
+            <div class="flex">flex 2</div>
+            <div class="flex">flex 3</div>
+            <div class="flex">flex 4</div>
+            <div class="flex">flex 5</div>
+            <div class="flex">flex 6</div>
+            <div class="flex">flex 7</div>
+            <div class="flex">flex 8</div>
+            <div class="flex">flex 9</div>
+            <div class="flex">flex 10</div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h1>Q 7 : Create the image or structure given in the image using grid.</h1>
+        <div class="grid-box">
+            <div class="grid g1">grid 1</div>
+            <div class="grid g2">grid 2</div>
+            <div class="grid g3">grid 3</div>
+            <div class="grid g4">grid 4</div>
+            <div class="grid g5">grid 5</div>
+            <div class="grid g6">grid 6</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
